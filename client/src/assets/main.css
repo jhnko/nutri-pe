@@ -1,0 +1,286 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-lato: 'Lato', sans-serif;
+}
+
+@theme {
+	--color-light-gold-50: #fdfae8;
+	--color-light-gold-100: #fbf5d0;
+	--color-light-gold-200: #f6eba2;
+	--color-light-gold-300: #f2e173;
+	--color-light-gold-400: #eed744;
+	--color-light-gold-500: #e9cd16;
+	--color-light-gold-600: #bba411;
+	--color-light-gold-700: #8c7b0d;
+	--color-light-gold-800: #5d5209;
+	--color-light-gold-900: #2f2904;
+	--color-light-gold-950: #211d03;
+
+	--color-royal-gold-50: #fdf9e7;
+	--color-royal-gold-100: #fcf4cf;
+	--color-royal-gold-200: #f9e89f;
+	--color-royal-gold-300: #f6dd6f;
+	--color-royal-gold-400: #f3d23f;
+	--color-royal-gold-500: #f0c70f;
+	--color-royal-gold-600: #c09f0c;
+	--color-royal-gold-700: #907709;
+	--color-royal-gold-800: #604f06;
+	--color-royal-gold-900: #302803;
+	--color-royal-gold-950: #221c02;
+
+	--color-golden-apricot-50: #fdf3e8;
+	--color-golden-apricot-100: #fbe8d0;
+	--color-golden-apricot-200: #f6d0a2;
+	--color-golden-apricot-300: #f2b973;
+	--color-golden-apricot-400: #eea144;
+	--color-golden-apricot-500: #e98a16;
+	--color-golden-apricot-600: #bb6e11;
+	--color-golden-apricot-700: #8c530d;
+	--color-golden-apricot-800: #5d3709;
+	--color-golden-apricot-900: #2f1c04;
+	--color-golden-apricot-950: #211303;
+
+	--color-golden-orange-50: #fef5e7;
+	--color-golden-orange-100: #fceacf;
+	--color-golden-orange-200: #f9d59f;
+	--color-golden-orange-300: #f7c06e;
+	--color-golden-orange-400: #f4ab3e;
+	--color-golden-orange-500: #f1960e;
+	--color-golden-orange-600: #c1780b;
+	--color-golden-orange-700: #915a08;
+	--color-golden-orange-800: #603c06;
+	--color-golden-orange-900: #301e03;
+	--color-golden-orange-950: #221502;
+
+	--color-soft-peach-50: #fcf6e9;
+	--color-soft-peach-100: #f8ecd3;
+	--color-soft-peach-200: #f1daa7;
+	--color-soft-peach-300: #eac77b;
+	--color-soft-peach-400: #e3b44f;
+	--color-soft-peach-500: #dda222;
+	--color-soft-peach-600: #b0811c;
+	--color-soft-peach-700: #846115;
+	--color-soft-peach-800: #58410e;
+	--color-soft-peach-900: #2c2007;
+	--color-soft-peach-950: #1f1705;
+}
+
+@font-face {
+	font-family: 'Lato Hairline';
+	src:
+		url('@/assets/fonts/lato/Lato-Hairline.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-Hairline.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-LightItalic.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-BlackItalic.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-BlackItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-Bold.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-Italic.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-BoldItalic.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-Regular.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-Light.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src:
+		url('@/assets/fonts/lato/Lato-Black.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato Hairline';
+	src:
+		url('@/assets/fonts/lato/Lato-HairlineItalic.woff2') format('woff2'),
+		url('@/assets/fonts/lato/Lato-HairlineItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@theme inline {
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+	--color-sidebar: var(--sidebar);
+	--color-sidebar-foreground: var(--sidebar-foreground);
+	--color-sidebar-primary: var(--sidebar-primary);
+	--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+	--color-sidebar-accent: var(--sidebar-accent);
+	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+	--color-sidebar-border: var(--sidebar-border);
+	--color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+	--radius: 0.625rem;
+	--background: oklch(1 0 0);
+	--foreground: oklch(0.145 0 0);
+	--card: oklch(1 0 0);
+	--card-foreground: oklch(0.145 0 0);
+	--popover: oklch(1 0 0);
+	--popover-foreground: oklch(0.145 0 0);
+	--primary: oklch(0.205 0 0);
+	--primary-foreground: oklch(0.985 0 0);
+	--secondary: oklch(0.97 0 0);
+	--secondary-foreground: oklch(0.205 0 0);
+	--muted: oklch(0.97 0 0);
+	--muted-foreground: oklch(0.556 0 0);
+	--accent: oklch(0.97 0 0);
+	--accent-foreground: oklch(0.205 0 0);
+	--destructive: oklch(0.577 0.245 27.325);
+	--border: oklch(0.922 0 0);
+	--input: oklch(0.922 0 0);
+	--ring: oklch(0.708 0 0);
+	--chart-1: oklch(0.646 0.222 41.116);
+	--chart-2: oklch(0.6 0.118 184.704);
+	--chart-3: oklch(0.398 0.07 227.392);
+	--chart-4: oklch(0.828 0.189 84.429);
+	--chart-5: oklch(0.769 0.188 70.08);
+	--sidebar: oklch(0.985 0 0);
+	--sidebar-foreground: oklch(0.145 0 0);
+	--sidebar-primary: oklch(0.205 0 0);
+	--sidebar-primary-foreground: oklch(0.985 0 0);
+	--sidebar-accent: oklch(0.97 0 0);
+	--sidebar-accent-foreground: oklch(0.205 0 0);
+	--sidebar-border: oklch(0.922 0 0);
+	--sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+	--background: oklch(0.145 0 0);
+	--foreground: oklch(0.985 0 0);
+	--card: oklch(0.205 0 0);
+	--card-foreground: oklch(0.985 0 0);
+	--popover: oklch(0.205 0 0);
+	--popover-foreground: oklch(0.985 0 0);
+	--primary: oklch(0.922 0 0);
+	--primary-foreground: oklch(0.205 0 0);
+	--secondary: oklch(0.269 0 0);
+	--secondary-foreground: oklch(0.985 0 0);
+	--muted: oklch(0.269 0 0);
+	--muted-foreground: oklch(0.708 0 0);
+	--accent: oklch(0.269 0 0);
+	--accent-foreground: oklch(0.985 0 0);
+	--destructive: oklch(0.704 0.191 22.216);
+	--border: oklch(1 0 0 / 10%);
+	--input: oklch(1 0 0 / 15%);
+	--ring: oklch(0.556 0 0);
+	--chart-1: oklch(0.488 0.243 264.376);
+	--chart-2: oklch(0.696 0.17 162.48);
+	--chart-3: oklch(0.769 0.188 70.08);
+	--chart-4: oklch(0.627 0.265 303.9);
+	--chart-5: oklch(0.645 0.246 16.439);
+	--sidebar: oklch(0.205 0 0);
+	--sidebar-foreground: oklch(0.985 0 0);
+	--sidebar-primary: oklch(0.488 0.243 264.376);
+	--sidebar-primary-foreground: oklch(0.985 0 0);
+	--sidebar-accent: oklch(0.269 0 0);
+	--sidebar-accent-foreground: oklch(0.985 0 0);
+	--sidebar-border: oklch(1 0 0 / 10%);
+	--sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+	}
+  body {
+    @apply bg-background text-foreground;
+	}
+}
